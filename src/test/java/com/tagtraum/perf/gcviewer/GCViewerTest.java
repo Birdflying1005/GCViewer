@@ -4,6 +4,7 @@ import com.tagtraum.perf.gcviewer.ctrl.impl.GCViewerGuiController;
 import com.tagtraum.perf.gcviewer.model.GCResource;
 import com.tagtraum.perf.gcviewer.model.GcResourceFile;
 import com.tagtraum.perf.gcviewer.model.GcResourceSeries;
+import net.jcip.annotations.NotThreadSafe;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -21,6 +22,7 @@ import static org.mockito.Mockito.*;
 /**
  * @author martin.geldmacher
  */
+@NotThreadSafe
 public class GCViewerTest {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
